@@ -1,5 +1,5 @@
-import "../styles/ContactPage.css";
-import "../styles/pagebase.css";
+import "./ContactPage.css";
+import "../components/pagebase.css";
 
 export default function ContactPage() {
   return (

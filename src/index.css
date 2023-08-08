@@ -3,10 +3,23 @@
   padding: 0;
 }
 
+:root {
+  --color-base-bg: #ffffff;
+  --color-text1: #000000;
+}
+
 body {
-  background: linear-gradient(211.49deg, #ffffff 28.93%, #f7b3b3 170.51%);
+  background: linear-gradient(211.49deg, var(--color-base-bg) 28.93%, #f7b3b3 170.51%);
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+  color: var(--color-text1);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --color-base-bg: #000000;
+    --color-text1: #ffffff;
+  }
 }
 
 /* Navbar */

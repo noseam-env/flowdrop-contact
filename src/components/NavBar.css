@@ -1,0 +1,137 @@
+
+.NavBar {
+  background-color: #050505;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.NavBar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 920px;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .NavBar__inner {
+    margin: 0 30px;
+  }
+}
+
+.NavLogoSvg {
+  color: white;
+}
+
+.NavLinks {
+  display: flex;
+}
+
+.NavLinks.show {
+  display: block;
+}
+
+.closeBtn {
+  display: none;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin: 5px 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .closeBtn {
+    display: block;
+    border: 0px;
+    background-color: #050505;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+  }
+
+  .NavBar {
+    background-color: transparent;
+  }
+
+  .NavLogo {
+    display: none;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .BurgerMenu > svg {
+    color: white;
+  }
+
+  .NavLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #050505;
+    padding: 10px 70px 0px 10px;
+  }
+
+  .NavLinks.show {
+    position: fixed;
+    margin-top: auto;
+    margin-left: auto;
+    height: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .BurgerMenu {
+    display: none;
+    overflow: hidden;
+  }
+
+  .navLogo {
+    width: 150px;
+    height: 20px;
+    margin: 13px 70px 0px 140px;
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .BurgerMenu {
+    display: none;
+    overflow: hidden;
+  }
+}

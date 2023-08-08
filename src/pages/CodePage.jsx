@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../styles/CodePage.css";
-import "../styles/pagebase.css";
+import "./CodePage.css";
+import "../components/pagebase.css";
 import {ReactComponent as GitHubIcon} from "../assets/icons/github.svg";
 import {ReactComponent as DesktopIcon} from "../assets/icons/desktop.svg"
 import {ReactComponent as AndroidIcon} from "../assets/icons/platforms/android.svg"
