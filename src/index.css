@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(211.49deg, #ffffff 28.93%, #f7b3b3 170.51%);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */

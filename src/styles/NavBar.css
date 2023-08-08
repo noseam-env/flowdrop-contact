@@ -1,0 +1,131 @@
+.NavBar {
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+
+.NavLogo {
+  height: 0px;
+}
+
+.navLogo {
+  width: 190px;
+  height: 29px;
+  margin: 8px 140px;
+}
+
+.NavLinks {
+  display: flex;
+  margin: 5px 140px;
+}
+
+.NavLinks.show {
+  display: block;
+}
+
+.closeBtn {
+  display: none;
+}
+
+ul {
+  display: flex;
+  margin: 5px 140px;
+}
+
+li {
+  list-style-type: none;
+  margin: 5px 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .closeBtn {
+    display: block;
+    border: 0px;
+    background-color: #050505;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+  }
+
+  .NavBar {
+    background-color: white;
+  }
+
+  .NavLogo {
+    display: none;
+  }
+
+  .BurgerMenu {
+    margin-right: auto;
+    padding: 0px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 0px;
+  }
+
+  .BurgerMenu > span {
+    background-color: black;
+    display: block;
+    width: 25px;
+    height: 4px;
+  }
+
+  .NavLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #050505;
+    padding: 10px 70px 0px 10px;
+  }
+
+  .NavLinks.show {
+    position: fixed;
+    margin-top: auto;
+    margin-left: auto;
+    height: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .BurgerMenu {
+    display: none;
+    overflow: hidden;
+  }
+
+  .navLogo {
+    width: 150px;
+    height: 20px;
+    margin: 13px 70px 0px 140px;
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .BurgerMenu {
+    display: none;
+    overflow: hidden;
+  }
+}
